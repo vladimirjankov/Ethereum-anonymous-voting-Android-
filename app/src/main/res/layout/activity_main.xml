@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtOdg1"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Odgovor 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPitanje" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Test_version"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtNewAddress"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPitaj" />
+
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Test Transfer"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddAddress"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView" />
+
+    <Button
+        android:id="@+id/btnZavrsiUpitnik"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Zavrsi upitnik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOdg4" />
+
+    <Button
+        android:id="@+id/btnPitaj"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pitaj"
+        app:layout_constraintEnd_toStartOf="@+id/btnZavrsiUpitnik"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOdg3" />
+
+    <EditText
+        android:id="@+id/edtPitanje"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pitanje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtOdg3"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Odgovor 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOdg1" />
+
+    <EditText
+        android:id="@+id/edtOdg4"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Odgovor 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edtOdg3"
+        app:layout_constraintTop_toBottomOf="@+id/edtOdg2" />
+
+    <EditText
+        android:id="@+id/edtOdg2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Odgovor 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toEndOf="@+id/edtOdg1"
+        app:layout_constraintTop_toBottomOf="@+id/edtPitanje" />
+
+    <EditText
+        android:id="@+id/edtNewAddress"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="New address"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZavrsiUpitnik" />
+
+    <Button
+        android:id="@+id/btnAddAddress"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNewAddress" />
+
+    <TextView
+        android:id="@+id/txtIscitanoPitanje"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransfer" />
+
+    <Button
+        android:id="@+id/btnOdg1"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="odg1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIscitanoPitanje" />
+
+    <Button
+        android:id="@+id/btnOdg2"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="ODG2"
+        app:layout_constraintStart_toEndOf="@+id/btnOdg1"
+        app:layout_constraintTop_toBottomOf="@+id/txtIscitanoPitanje" />
+
+    <Button
+        android:id="@+id/btnOdg4"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ODG4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnOdg3"
+        app:layout_constraintTop_toBottomOf="@+id/txtIscitanoPitanje" />
+
+    <Button
+        android:id="@+id/btnOdg3"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="ODG3"
+        app:layout_constraintStart_toEndOf="@+id/btnOdg2"
+        app:layout_constraintTop_toBottomOf="@+id/txtIscitanoPitanje" />
+
+    <EditText
+        android:id="@+id/edtContractAddress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Adresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOdg3" />
+
+    <Button
+        android:id="@+id/btnLoadContractFromAddress"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:text="Iscitaj prkeo adrese "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtContractAddress" />
+
+    <EditText
+        android:id="@+id/edtPrivateKey"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Private key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadContractFromAddress" />
+
+    <Button
+        android:id="@+id/btnPrivateKey"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Promeni privatni kljuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrivateKey" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
